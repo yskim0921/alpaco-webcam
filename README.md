@@ -14,21 +14,27 @@
 ## 📦 설치 및 실행 방법
 
 ### 1. Conda 환경 생성 및 접속
-```bash
+```
 conda activate base
 conda create -n alpaco python==3.8
 conda activate alpaco
-2. 필수 라이브러리 설치
+```
+### 2. 필수 라이브러리 설치
+```
 pip install fastapi
 pip install "uvicorn[standard]"
 pip install opencv-python
+```
 
-3. FastAPI 서버 실행
+### 3. FastAPI 서버 실행
+```
 python webcam_server.py
-
+```
 
 서버 실행 후 브라우저에서 확인:
-
+```
 http://localhost:8500/test → API 테스트 ({"msg":"hi"} 출력)
-
+```
+```
 http://localhost:8500/video → 웹캠 스트리밍 확인
+```
